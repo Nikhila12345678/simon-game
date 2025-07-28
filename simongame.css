@@ -1,0 +1,79 @@
+.box{
+    height:200px;
+    width:200px;
+    border:10px solid black;
+    border-radius:20%;
+    margin:10px;
+   }
+   h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px;
+    color:olive;
+    text-decoration:underline olive wavy;
+    text-decoration-thickness:2px;
+   }
+   h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:maroon;
+   }
+
+ .pink{
+    background-color: pink;
+ }
+ 
+ .blue{
+    background-color: blue;
+ }
+ .orange{
+    background-color: orange;
+ }
+ .green{
+    background-color: green;
+ }
+
+#outer{
+    height:100%;
+    width:100%;
+}
+body{
+    text-align:center;
+    background-color:#F3EBDC;
+}
+#one{
+    display:flex;
+    justify-content:center;
+    
+    margin:4px;
+}
+#two{
+    display:flex;
+    justify-content:center;
+}
+.gameflash{
+    background-color:white;
+}
+.userflash{
+    background-color:black;
+}
+.bodyflash{
+    background-color:red;
+}
+
+#gameover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: black;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+#gameover.show {
+    opacity: 1;
+}
+
